@@ -26,9 +26,9 @@ body {
     margin-bottom: 20px;
   }
   
-  p:last-child {
+ /* p:last-child {
     margin-bottom: 0;
-  }
+  }*/
   
   h1,
   h2,
@@ -217,106 +217,102 @@ body {
   /*Using meida Queries to create responsive */
   /*when the brower window is 980px or less */
   @media only screen and (max-width:980px) {
-  /*general header setting for all three*/
-   body{
-      width:100%;
-      margin: 0;
+     body{
+        width:100%;
+        margin: 0;
+      }
+      #logo {
+        margin-left: 5%;
+        background-color:red; 
     }
-    #logo {
-      margin-left: 5%;
-      background-color:red;
-    
-  }
-  nav{
-margin-right: 60px;
-  }
-  section.main-section {
-  width: 600px;
-  transform: scaleY(0.8);
-  margin-left:5%;
-  position: relative;
-  bottom:50px;
-  }
-  /* Porfolio*/
-  .work {
+    nav{
+  margin-right: 60px;
+    }
+    section.main-section {
+    width: 600px;
+    transform: scaleY(0.8);
+    margin-left:5%;
     position: relative;
-    float: left;
-    width: 274px;
-    overflow: auto;
-  }
-  
-  .work:nth-child(even) {
-  
-  }
-  
-  .work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-  }
-  
-  .work h3 {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-    color: #fff;
-    text-align: center;
-    background: #4aaaa5;
-    border-bottom: 0;
-  }
-}
-  /*when the brower window is 768px or less and the logo color will change to purple*/
-  @media only screen and (max-width:768px) {
-    #logo {
-      background-color: purple;
-      margin-left: 5%;
-  }
-  nav{
-margin-right: 30px;
-  }
-  
-  section.main-section {
-    width:90%;
-  }
-}
-  /*when the brower window is 640px or less and the logo color will change to greeen*/
-  @media only screen and (max-width:640px) {
-
- #logo {
-  background-color: green;
-   width: 100%;
-   display: block;
-   text-align:center;
-   position: relative;
-   bottom: 25px;
-   right:30px;
-  }
-  nav{
-    float:none;
-    display:block;
-    text-align: center;
-    width:100%;
-  }
- 
-  section.main-section{
-    width:96%;
-   margin:0 2%;
- 
-  }
-  .auth-image{
-    float:none;
-    width:100%;
-  }
-  footer{
-    width:100%;
-  }
- /*This is self-adding class to fix the top spacing of the main-section when max-width is 640px or less*/
+    bottom:100px;
+    }
+ /*This is self-adding class to fix the top spacing of the main-section of contact when max-width is 980px or less*/
  .responsive-contact{
   position: relative;
-  top:20px;
+  top:50px;
 }
+  /*portfolio*/
+  .work{
+    width:40%;
+  }
+  .work h3 {
+    padding:15px 0px;
+  }
 }
+    /*when the brower window is 768px or less and the logo color will change to purple*/
+   @media only screen and (max-width:768px) {
+      #logo {
+        background-color: purple;
+        margin-left: 5%;
+    }
+    nav{
+  margin-right: 30px;
+    }
+
+    section.main-section {
+      width:90%;
+  
+    }
+    /*This is self-adding class to fix the top spacing of the main-section of contact when max-width is 768px or less*/
+  .responsive-contact{
+    position: relative;
+    top:30px;
+  }
+  }
+    /*when the brower window is 640px or less and the logo color will change to greeen*/
+    @media only screen and (max-width:640px) {
+  
+   #logo {
+    background-color: green;
+     width: 100%;
+     display: block;
+     text-align:center;
+     position: relative;
+     bottom: 25px;
+     right:30px;
+    }
+    nav{
+      float:none;
+      display:block;
+      text-align: center;
+      width:100%;
+    }
+   
+    section.main-section{
+      width:96%;
+     margin:30px 2%;
+  
+    }
+    .auth-image{
+      float:none;
+      width:100%;
+    }
+    footer{
+      width:100%;
+    }
+   /*This is self-adding class to fix the top spacing of the main-section of contact when max-width is 640px or less*/
+  .responsive-contact{
+    position: relative;
+    top:50px;
+  }
+  /*portfolio*/
+  .work {
+    width:90%;
+    margin-left:20px;
+  }
+  /*Self-adding class to fix the position of the main-section of the portfolio when window is 640px or less*/
+  .responsive-port{
+    position: relative;
+    bottom:60px;
+  }
+ 
+    }
